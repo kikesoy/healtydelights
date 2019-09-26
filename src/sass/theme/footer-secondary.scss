@@ -1,0 +1,25 @@
+#footer-secondary {
+  .footer-auxiliar {
+    margin-bottom: $spacer;
+  }
+
+  .widget_text:last-of-type {
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+    }
+    .textwidget {
+      display: block;
+      @include media-breakpoint-up(md) {
+        display: inline;
+      }
+    }
+  }
+  .textwidget {
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+}

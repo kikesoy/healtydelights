@@ -1,0 +1,45 @@
+.home-content {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  background-color: $white;
+  height: 100%;
+  @include border-radius($spacer * 0.5);
+
+  &-image {
+    img {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+  &-header {
+    flex: 1;
+    padding: ($spacer * 2) $spacer;
+    text-align: center;
+
+    &-title {
+      color: $primary;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: $spacer;
+    }
+    &-description {
+      color: $secondary;
+    }
+  }
+  &-footer {
+    position: absolute;
+    padding: $spacer;
+    width: 100%;
+    bottom: 0;
+    line-height: 1;
+
+    .btn {
+      text-transform: uppercase;
+      font-weight: 700;
+      display: block;
+      padding: $spacer;
+    }
+  }
+}

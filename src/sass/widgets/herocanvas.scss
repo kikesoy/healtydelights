@@ -1,0 +1,49 @@
+.herocanvas {
+  position: relative;
+  display: flex;
+  flex: auto;
+  min-height: 500px;
+  margin-bottom: ($spacer * 3);
+
+  &-image {
+    display: flex;
+    flex: auto;
+    background: {
+      position-x: 50%;
+      position-y: 50%;
+      repeat: no-repeat;
+      size: cover;
+    }
+  }
+
+  &-btn {
+    width: 250px;
+    box-shadow: 0 0 ($spacer * 2) rgba(0, 0, 0, 1);
+    background-color: $primary;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    figure {
+      img {
+      }
+      figcaption {
+        text-align: center;
+        padding: ($spacer * 0.5);
+      }
+    }
+    &:hover {
+      color: $white;
+      background-color: $secondary;
+      text-decoration: none;
+    }
+  }
+  .textwidget {
+    @include make-container;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

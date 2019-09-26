@@ -1,0 +1,53 @@
+#wrapper-navbar {
+  position: relative;
+  box-shadow: 0 0 ($spacer * 4) rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.navbar {
+  background-color: $white;
+  padding: 0;
+  .navbar-brand {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+  .navbar-nav {
+    .menu-item {
+      &-ubereats {
+        display: none;
+      }
+      .nav-link {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: center;
+        padding: $spacer;
+        &:hover {
+          color: $white;
+          background-color: $primary;
+        }
+      }
+    }
+    .active {
+      .nav-link {
+        color: $white;
+        background-color: $secondary;
+      }
+    }
+  }
+  .navbar-brand {
+    width: 66.6666%;
+    margin-left: $spacer;
+    @include media-breakpoint-up(md) {
+      width: 33.3333%;
+      margin-left: 0;
+    }
+  }
+  .navbar-toggler {
+    .fa-bars {
+      path {
+        fill: $primary;
+      }
+    }
+  }
+}

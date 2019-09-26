@@ -1,0 +1,23 @@
+@import "./theme/_variables"; // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
+@import "~bootstrap/scss/bootstrap"; // <-------- Loads Bootstrap from node_modules
+// @import "./understrap/understrap"; // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "./understrap/woocommerce"; // <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Elements
+@import "./theme/layout";
+@import "./theme/header";
+@import "./theme/navbar";
+@import "./theme/site-main";
+@import "./theme/entry-title";
+@import "./theme/entry-content";
+@import "./theme/entry-content-menu";
+@import "./theme/footer";
+@import "./theme/footer-navbar";
+@import "./theme/footer-secondary";
+
+// Blocks
+@import "./block/home-content";
+
+// Widgets
+@import "./widgets/herocanvas";
+@import "./widgets/modula";

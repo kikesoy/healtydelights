@@ -1,0 +1,56 @@
+#page-menu {
+  .wp-block-columns {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-up(md) {
+      width: 75%;
+    }
+  }
+  .badge-menu {
+    text-align: center;
+    span {
+      color: $white;
+      background-color: $primary;
+      display: inline;
+      padding: ($spacer * 0.5);
+      border-radius: 0;
+      font-weight: 900;
+    }
+  }
+  .table {
+    tr {
+      td {
+        vertical-align: top;
+      }
+    }
+  }
+  .table-menu {
+    tr {
+      td {
+        strong {
+          font-weight: 900;
+          color: $secondary;
+          font-size: 1.5rem;
+        }
+      }
+      td:last-of-type {
+        font-weight: 900;
+        color: $secondary;
+        font-size: 1.5rem;
+        text-align: right;
+        white-space: nowrap;
+        width: 1%;
+      }
+    }
+  }
+  .columns-menu {
+    p {
+      strong {
+        font-weight: 900;
+        color: $primary;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

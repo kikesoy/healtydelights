@@ -1,0 +1,40 @@
+.entry-content {
+  font-size: 18px;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $secondary;
+    margin-bottom: $spacer;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  table {
+    @include media-breakpoint-up(md) {
+      width: 75%;
+    }
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  hr {
+    width: 50%;
+    border-top-color: $primary;
+    margin-top: ($spacer * 2);
+    margin-bottom: ($spacer * 2);
+  }
+  .wp-block-column {
+    p {
+      width: 100%;
+    }
+  }
+}

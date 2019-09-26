@@ -1,0 +1,13 @@
+.svg-header {
+  background: $white;
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  &-level-1 {
+    fill: $primary;
+  }
+  &-level-2 {
+    fill: $primary-light;
+  }
+}

@@ -1,0 +1,27 @@
+.footer-navbar {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+  height: 100%;
+  .menu-primary-nav-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    .menu-item {
+      margin-right: $spacer;
+      a {
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
